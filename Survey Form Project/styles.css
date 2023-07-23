@@ -1,0 +1,101 @@
+label {
+  display: block;
+}
+h1 {
+  text-align: center;
+}
+div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+body,
+textarea {
+  font-family: sans-serif, Arial;
+  font-size: 14px;
+}
+
+body {
+  background: linear-gradient(90deg, limegreen, rgb(127, 216, 136));
+  color: white;
+}
+
+textarea {
+  width: 100%;
+}
+
+.submit-button {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+#submit {
+  width: 50%;
+  border: 0;
+  font-size: 20px;
+  color: black;
+  padding: 5px;
+  background-color: rgb(186, 252, 230);
+  border-radius: 10px;
+}
+fieldset {
+  border: 0;
+  margin: 20px auto;
+}
+
+.form-div {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px 20px;
+}
+
+.fieldsets_ {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.names,
+.type-dev,
+.enjoy,
+.program-stuff,
+.textbox {
+  padding: 20px;
+}
+
+.names input {
+  display: block;
+  margin: 10px;
+  width: 95%;
+  height: 32px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.type-dev select {
+  display: block;
+  width: 95%;
+  margin: 10px;
+  height: 32px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.enjoy input {
+  margin: 10px;
+
+  border: 0;
+  border-radius: 5px;
+}
+
+.program-stuff input {
+  margin: 10px;
+
+  border: 0;
+  border-radius: 5px;
+}
+
+.textbox textarea {
+  margin: 10px;
+  height: 100px;
+  width: 95%;
+  border: 0;
+  border-radius: 5px;
+}
