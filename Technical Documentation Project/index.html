@@ -3,36 +3,191 @@
   <head>
     <meta charset="utf-8">
     <title>Technical Documentation Demo Page</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <div class="navbar">
+    <nav id="navbar">
+      <div class="header-text">
+      <header>
+        Programming Languages 
+      </header>
+      </div>
+      <ul>
+        <li class="page-link"><a class='nav-link' href="#Python">Python</a></li>
+        <li class="page-link"><a class='nav-link' href="#Java">Java</a></li>
+        <li class="page-link"><a class='nav-link' href="#JavaScript">JavaScript</a></li>
+        <li class="page-link"><a class='nav-link' href="#HTML_and_CSS">HTML and CSS</a></li>
+        <li class="page-link"><a class='nav-link' href="#Swift">Swift</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="main-doc-div">
     <main id="main-doc">
-      <section id="Python">
+      <section class='main-section' id="Python">
         <header>
           Python
         </header>
+        <p>
+          Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
+        </p>
+        <p>
+          Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. 
+        </p>
+        <footer>
+          ***Taken from https://www.python.org/doc/essays/blurb/
+        </footer>
+        <code>
+          print('Hello, world!')
+          
+        </code>
+        <ol><label class="ol-heading">List of Some Objects in x-programming language</label>
+          <li>
+            num = 7
+          </li>
+          <li>
+            if num < 0: print("Sorry, factorial does not exist for negative numbers")
+          </li>
+          <li>
+            for i in range(2,num): print(num)
+          </li>
+        </ol>
       </section>
-      <section id="Java">
+      <section class='main-section' id="Java">
         <header>
           Java
         </header>
+        <p>
+          Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications in use today. 
+        </p>
+        <p>
+          Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.
+        </p>
+        <footer>
+          ***Taken from https://aws.amazon.com/what-is/java/
+        </footer>
+        <code>
+          public static void main(String[] args) {<br>
+            Scanner reader = new Scanner(System.in);<br>
+            System.out.print("Enter a number: ");<br>
+          }
+        </code>
+        <ol><label class="ol-heading">List of Some Objects in x-programming language</label>
+          <li>
+            float first = 1.20f
+          </li>
+          <li>
+            System.out.println();
+          </li>
+          <li>
+            String[] args
+          </li>
+        </ol>
       </section>
-      <section id="JavaScript">
+      <section class='main-section' id="JavaScript">
         <header>
           JavaScript
         </header>
+        <p>
+          JavaScript is a scripting or programming language that allows you to implement complex features on web pages.
+        </p>
+        <p>
+          Every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
+        </p>
+        <footer>
+          ***Taken from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+        </footer>
+        <code>
+          const para = document.querySelector("p");<br> 
+          para.addEventListener("click", updateName);
+        </code>
+        
+        <ol><label class="ol-heading">Some examples of different parts of JavaScript</label>
+          <li>
+            const a = Math.random();
+          </li>
+          <li>
+            console.log(a);
+          </li>
+          <li>
+            const min = parseInt(prompt("Enter a min value: "));
+          </li>
+        </ol>
       </section>
-      <section>
-        <header id="HTML-and-CSS">
+      <section class='main-section' id="HTML_and_CSS">
+        <header>
           HTML and CSS
         </header>
+        <p>
+          HTML is a markup language used to create static web pages and web applications.
+        </p>
+        <p>
+          CSS is a style sheet language responsible for the presentation of documents written in a markup language.
+        </p>
+        <footer>
+          ***Taken from https://www.simplilearn.com/tutorials/html-tutorial/html-vs-css#html_vs_css
+        </footer>
+        <code>
+          [HTML]:<br>
+          &lt;!DOCTYPE html>&gt;<br>
+          &lt;html lang="en">&gt;<br>
+          &lt;head>&gt;<br>
+          <br>
+          [CSS]:<br>
+          .header-text{<br>
+            text-align: center;<br>
+            font-size: 1.3rem;<br>
+            border-bottom-color: darkgray;<br>
+          }<br>
+        </code>
+        <ol><label class="ol-heading">List of Some Elements & Properties in HTML & CSS</label>
+          <li>
+            &lt;li&gt;
+          </li>
+          <li>
+            background-color
+          </li>
+          <li>
+            accent-color
+          </li>
+        </ol>
+        
       </section>
-      <section>
+      <section class="main-section" id="Swift">
         <header>
-
+          Swift
         </header>
+        <p>
+          Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.
+        </p>
+        <p>
+          The goal of the Swift project is to create the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services.
+        </p>
+        <footer>
+          ***Taken from https://www.swift.org/about/
+        </footer>
+        <code>
+          Example Code
+        </code>
+        <ol><label class="ol-heading">Some examples of different parts of Swift:</label>
+          <li>
+            let maximumNumberOfLoginAttempts
+          </li>
+          <li>
+            var currentLoginAttempt
+          </li>
+          <li>
+            "hello, " + "world"
+          </li>
+        </ol>
       </section>
 
     </main>
+
+      <img class='logo' src="fcc_secondary_small.svg" alt="FreeCodeCamp Logo">
+
+    </div>
+    
 
   </body>
 </html>
