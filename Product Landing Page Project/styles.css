@@ -12,6 +12,7 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: rgb(1, 65, 65);
 }
 
 
@@ -49,6 +50,7 @@ li a{
 
 .comp-name{
   font-size: 2rem;
+  color:rgb(1, 65, 65);
 }
 
 #header-img{
@@ -63,6 +65,7 @@ li a{
   display: inline-flex;
   align-items: center;
   width: fit-content;
+  z-index: 100;
 
 }
 
@@ -86,7 +89,7 @@ li a{
   display: inline-flex;
   position: absolute;
   right: 0;
-
+  z-index: 100;
 
 }
 
@@ -179,3 +182,9 @@ iframe{
   opacity: 0.3;
 }
 
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: rgb(0, 65, 65);
+  }
+}
