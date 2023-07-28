@@ -11,20 +11,20 @@
         <img id="header-img" src="box.png">
         <span class='comp-name'>Product Corp</span>
       </div>
-      <nav class="nav-bar">
+      <nav class="nav-bar" id="nav-bar">
         <ul>
-          <li class="nav-link"><a href="#About-Us">About Us</a></li>
-          <li class="nav-link"><a href="#About-our-Product">About our Product (the video)</a></li>
-          <li class="nav-link"><a href="#Pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#About-Us">About Us</a></li>
+          <li><a class="nav-link" href="#About-our-Product">About our Product (the video)</a></li>
+          <li><a  class="nav-link" href="#Pricing">Pricing</a></li>
         </ul>
       </nav>
     </header>
   </div>
     
     <div class="enter-email">
-      <form action="https://www.freecodecamp.com/email-submit" method="GET">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
         <h1> Enter email for more information:</h1>
-        <label><input id="email" type="email" placeholder="Enter your email address here" required=""></label>
+        <label><input name='email' id="email" type="email" placeholder="Enter your email address here" required=""></label>
         <label><input id="submit" type="submit" value="Learn More"></label>
       </form>
     </div>
@@ -43,7 +43,7 @@
     </div>
     <div id="About-our-Product">
       <h1>Some Free Lofi Instead :)</h1>
-      <video id="video" style="width: 0; height: 0">
+      <video id="video" style="width: 0; height: 0" src="">
       </video>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
